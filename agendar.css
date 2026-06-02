@@ -1,0 +1,158 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+    background-color: #efefef;
+    font-family: 'Patrick Hand', cursive;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+/* CONTAINER */
+
+.container{
+    width: 95%;
+    max-width: 1280px;
+    height: 720px;
+
+    background-color: #ececec;
+
+    border-radius: 25px;
+
+    padding: 40px 50px;
+
+    position: relative;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* TITULO */
+
+.container h1{
+    font-size: 70px;
+    color: #5b2323;
+
+    margin-bottom: 60px;
+}
+
+/* LINHAS */
+
+.linha{
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    margin-bottom: 60px;
+}
+
+.linha label{
+    font-size: 45px;
+    min-width: 350px;
+}
+
+/* CAMPOS */
+
+select,
+input{
+    border: none;
+    outline: none;
+
+    background-color: #d2d2d2;
+
+    height: 50px;
+
+    border-radius: 20px;
+
+    padding: 0 20px;
+
+    font-family: 'Patrick Hand', cursive;
+    font-size: 30px;
+}
+
+.pacote{
+    width: 320px;
+}
+
+.data{
+    width: 320px;
+}
+
+.dados{
+    width: 400px;
+}
+
+/* LOGO */
+
+.logo{
+    position: absolute;
+
+    right: 120px;
+    top: 280px;
+}
+
+.logo img{
+    width: 180px;
+}
+
+/* BOTÃO */
+
+.btn-confirmar{
+    position: absolute;
+
+    bottom: 60px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background-color: #d2d2d2;
+
+    padding: 15px 40px;
+
+    border-radius: 20px;
+
+    font-size: 35px;
+    font-family: 'Patrick Hand', cursive;
+
+    text-decoration: none;
+    color: black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.btn-confirmar:hover{
+    opacity: 0.8;
+}
+.btn-confirmar:hover{
+    opacity: .8;
+}
+
+/* LINK */
+
+.voltar{
+    position: absolute;
+
+    right: 40px;
+    bottom: 65px;
+
+    text-decoration: none;
+
+    color: black;
+
+    font-size: 35px;
+}
