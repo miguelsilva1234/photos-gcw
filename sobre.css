@@ -1,0 +1,130 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Patrick Hand', cursive;
+    background: linear-gradient(135deg, #f5f5f5, #d9d9d9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-mim-page {
+    width: 100%;
+    padding: 30px;
+}
+
+.sobre-container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Lado esquerdo */
+.perfil {
+    background: #6a2b00;
+    color: white;
+    width: 35%;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.perfil img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+}
+
+.perfil h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.perfil hr {
+    width: 70%;
+    margin: 15px auto;
+    border: 1px solid #555;
+}
+
+.perfil p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+/* Lado direito */
+.descricao {
+    width: 65%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.descricao p {
+    font-size: 1.4rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.descricao img {
+    width: 180px;
+    margin: 0 auto 30px;
+    border-radius: 15px;
+}
+
+/* Botão */
+.btn-voltar {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 12px 30px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.btn-voltar:hover {
+    background: #444;
+    transform: translateY(-3px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+    }
+
+    .perfil,
+    .descricao {
+        width: 100%;
+    }
+
+    .descricao {
+        padding: 30px;
+    }
+
+    .descricao p {
+        font-size: 1.2rem;
+    }
+
+    .perfil img {
+        width: 140px;
+        height: 140px;
+    }
+}
